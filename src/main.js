@@ -5,3 +5,4 @@ import './assets/tailwind.css'
 import 'flowbite';
 
 createApp(App).use(router).mount('#app')
+
