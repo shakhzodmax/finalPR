@@ -1,15 +1,16 @@
 <template>
   <NavBar />
-  <HomePage/>
+  <History/>
   <FooTer/>
 </template>
 
 <script>
 import NavBar from "@/views/NavbarPage";
 import FooTer from "@/views/FooterPage";
-import HomePage from "@/views/HomePage";
+import History from "@/views/HistoryPage";
+
 export default {
-  components: {HomePage, FooTer, NavBar}
+  components: {History, FooTer, NavBar}
 }
 </script>
 
