@@ -1,5 +1,6 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import ArticlesPage from '../views/ArticlesPage.vue'
+import BusinessPage from '../views/BusinessPage'
 import BlankPage from '../views/BlankPage.vue'
 import CeoMessagePage from '../views/CeoMessagePage.vue'
 import ConditionPage from '../views/ConditionPage.vue'
@@ -17,11 +18,13 @@ import ExecutiveBodyPage from '../views/ExecutiveBodyPage.vue'
 import FinancialReportPage from '../views/FinancialReportPage.vue'
 import FunctionPage from '../views/FunctionPage.vue'
 import FundPage from '../views/FundPage.vue'
+import GlossaryPage from '../views/GlossaryPage'
 import HomePage from '../views/HomePage'
 import HeadlinerPage from '../views/HeadlinerPage.vue'
 import HistoryPage from '../views/HistoryPage.vue'
 import IsinAndCfiPage from '../views/IsinAndCfiPage.vue'
 import ItServicePage from '../views/ItServicePage.vue'
+import KpiPage from '../views/KpiPage'
 import MediaPage from '../views/MediaPage.vue'
 import MembershipPage from '../views/MembershipPage.vue'
 import NewsPage from '../views/NewsPage.vue'
@@ -59,8 +62,12 @@ const routes = [
     path: '/articles',
     name: 'articles',
     component: ArticlesPage
-  }
-  ,
+  },
+  {
+    path: '/business',
+    name: 'business',
+    component: BusinessPage
+  },
   {
     path: '/blanks',
     name: 'blanks',
@@ -144,7 +151,12 @@ const routes = [
   {
     path: '/fund',
     name: 'fund',
-    component: () => FundPage
+    component: FundPage
+  },
+  {
+    path: '/glossary',
+    name: 'glossary',
+    component: GlossaryPage
   },
   {
     path: '/headliners',
@@ -165,6 +177,11 @@ const routes = [
     path: '/itService',
     name: 'itService',
     component: ItServicePage
+  },
+  {
+    path: '/kpi',
+    name: 'kpi',
+    component: KpiPage
   },
   {
     path: '/media',
@@ -242,8 +259,8 @@ const routes = [
     component: StructurePage
   },
   {
-    path: '/tarifPage',
-    name: 'tarifPage',
+    path: '/tarif',
+    name: 'tarif',
     component: TarifPage
   },
   {
@@ -259,7 +276,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 

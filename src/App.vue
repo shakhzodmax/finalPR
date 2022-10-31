@@ -9,7 +9,7 @@ import NavBar from "@/views/NavbarPage";
 import FooTer from "@/views/FooterPage";
 
 export default {
-  components: {NavBar,FooTer}
+  components: {NavBar,FooTer},
 }
 </script>
 

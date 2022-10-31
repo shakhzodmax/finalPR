@@ -3,7 +3,7 @@
       <nav class="bg-sky-800 fixed top-0 w-full">
         <div class="container mx-auto text-white">
           <div class="flex justify-between">
-            <a class="flex-none flex justify-center items-center" href="#">
+            <a class="flex-none flex justify-center items-center" href="/">
               <img class="w-14 h-14 2xl:block xl:block lg:block md:hidden" src="~@/assets/csd.svg" alt="">
               <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <br> ЦЕННЫХ БУМАГ</p>
             </a>
@@ -86,18 +86,18 @@
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li class="font-bold"><a href="#">Обращение директора</a></li>
-              <li><a class="font-bold" href="#">Центральный депозитарий</a>
+              <li class="font-bold"><a href="/ceoMessage">Обращение генерального директора</a></li>
+              <li><a class="font-bold" href="/profile">Центральный депозитарий</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Профиль</a></li>
-                  <li><a href="#">История</a></li>
-                  <li><a href="#">Руководство</a></li>
-                  <li><a href="#">Структурные подразделения</a></li>
+                  <li class="pt-5"><router-link to="/profile">Профиль</router-link></li>
+                  <li><a href="/history">История</a></li>
+                  <li><a href="/headliners">Руководство</a></li>
+                  <li><a href="/structure">Структурные подразделения</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="#">Задачи и функции</a></li>
-              <li class="font-bold"><a href="#">Международное сотрудничество</a></li>
-              <li class="font-bold"><a href="#">Вакансии</a></li>
+              <li class="font-bold"><a href="/function">Задачи и функции</a></li>
+              <li class="font-bold"><a href="/membership">Международное сотрудничество</a></li>
+              <li class="font-bold"><a href="/vacancy">Вакансии</a></li>
             </ul>
           </div>
         </div>
@@ -124,22 +124,22 @@
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li><a class=" font-bold" href="#">Услуги</a>
+              <li><a class=" font-bold" href="/depoService">Услуги</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Профиль</a></li>
-                  <li><a href="#">История</a></li>
-                  <li><a href="#">Руководство</a></li>
-                  <li><a href="#">Структурные подразделения</a></li>
+                  <li class="pt-5"><a href="/profile">Депозитарные услуги</a></li>
+                  <li><a href="/history">Информационные услуги</a></li>
+                  <li><a href="/headliners">Консультативные услуги</a></li>
+                  <li><a href="">Электронное голосование</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="#">Тарифы</a></li>
-              <li><a class="font-bold" href="#">Контакты</a>
+              <li class="font-bold"><a href="/tarif">Тарифы</a></li>
+              <li><a class="font-bold" href="/contacts">Контакты</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Профиль</a></li>
-                  <li><a href="#">История</a></li>
+                  <li class="pt-5"><a href="/schedule">График приема</a></li>
+                  <li><a href="/review">Наши отзывы </a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="#">Техническое сопровождение</a></li>
+              <li class="font-bold"><a href="/technicalSupport">Техническое сопровождение</a></li>
             </ul>
           </div>
         </div>
@@ -173,28 +173,28 @@
                   <li><a href="#">Служба внутреннего аудита</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="#">Документы</a>
+              <li><a class="font-bold" href="/document">Документы</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Положение</a></li>
-                  <li><a href="#">Устав</a></li>
+                  <li class="pt-5"><a href="/conditions">Положение</a></li>
+                  <li><a href="/regulation">Устав</a></li>
                 </ul>
               </li>
               <li><a class="font-bold" href="#">Раскрытие информации</a>
                 <ul>
                   <li class="pt-5"><a href="#">Перечень аффилированных лиц</a></li>
                   <li><a href="#">Существенные факты</a></li>
-                  <li><a href="#">Бизнес план</a></li>
-                  <li><a href="#">Показатели эффективности</a></li>
+                  <li><a href="/business">Бизнес план</a></li>
+                  <li><a href="/kpi">Показатели эффективности</a></li>
                   <li><a href="#">Стратегия развития</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="#">Уставной фонд</a></li>
-              <li><a class="font-bold" href="#">Финансовая отчетность</a>
+              <li class="font-bold"><a href="/fund">Уставной фонд</a></li>
+              <li><a class="font-bold" href="/financialReport">Финансовая отчетность</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Годовые и квартальные отчеты</a></li>
-                  <li><a href="#">Отчетность по МСФО</a></li>
-                  <li><a href="#">Сведение о закупках</a></li>
-                  <li><a href="#">Результаты внешнего аудита</a></li>
+                  <li class="pt-5"><a href="/financialReport">Годовые и квартальные отчеты</a></li>
+                  <li><a href="financialReport">Отчетность по МСФО</a></li>
+                  <li><a href="financialReport">Сведение о закупках</a></li>
+                  <li><a href="financialReport">Результаты внешнего аудита</a></li>
                 </ul>
               </li>
             </ul>
@@ -223,24 +223,24 @@
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li><a class=" font-bold" href="#">Пресс-секретарь</a>
+              <li><a class=" font-bold" href="/pressSecretary">Пресс-секретарь</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Пресс - релизы</a></li>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="#">Статьи</a></li>
+                  <li class="pt-5"><a href="/pressRelease">Пресс - релизы</a></li>
+                  <li><a href="/news">Новости</a></li>
+                  <li><a href="/articles">Статьи</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="#">Медиатека</a></li>
-              <li class="font-bold"><a href="#">Статистическая информация</a></li>
+              <li><a class="font-bold" href="/media">Медиатека</a></li>
+              <li class="font-bold"><a href="/statisticalInformation">Статистическая информация</a></li>
               <li><a class="font-bold" href="#">Полезные материалы</a>
                 <ul>
-                  <li class="pt-5"><a href="#">DEPO-инфографика</a></li>
-                  <li><a href="#">DEPO-дайджест</a></li>
-                  <li><a href="#">DEPO-compass</a></li>
-                  <li><a href="#">DEPO-вестник</a></li>
+                  <li class="pt-5"><a href="/depoInfo">DEPO-инфографика</a></li>
+                  <li><a href="/depoDigest">DEPO-дайджест</a></li>
+                  <li><a href="/depoCompass">DEPO-compass</a></li>
+                  <li><a href="/depoVestnik">DEPO-вестник</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="#">Нормативные документы</a></li>
+              <li class="font-bold"><a href="/regulatory">Нормативные документы</a></li>
             </ul>
           </div>
         </div>
@@ -269,14 +269,14 @@
             <ul class="flex justify-around">
               <li><a class=" font-bold" href="#">Документы</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Договор</a></li>
-                  <li><a href="#">Бланки</a></li>
-                  <li><a href="#">Словарь терминов</a></li>
+                  <li class="pt-5"><a href="/contracts">Договор</a></li>
+                  <li><a href="/blanks">Бланки</a></li>
+                  <li><a href="/glossary">Словарь терминов</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="#">ISIN и CFI коды</a></li>
-              <li><a class="font-bold" href="#">Анкета опросник</a></li>
-              <li class="font-bold"><a href="#">Онлайн-обращение</a></li>
+              <li><a class="font-bold" href="/isinAndcfi">ISIN и CFI коды</a></li>
+              <li><a class="font-bold" href="/questionnaire">Анкета опросник</a></li>
+              <li class="font-bold"><a href="/onlineReport">Онлайн-обращение</a></li>
             </ul>
           </div>
         </div>
@@ -287,7 +287,7 @@
       <!-- Mobile navigation bar starts -->
     <div class="w-full h-14 bg-sky-800">
       <div class="flex justify-between items-center px-10">
-          <a class="flex justify-start items-center" href="#">
+          <a class="flex justify-start items-center" href="/">
             <img class="w-14 h-14" src="~@/assets/csd.svg" alt="">
             <p class="text-xs pl-1 text-white">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <br> ЦЕННЫХ БУМАГ</p>
           </a>
@@ -307,14 +307,14 @@
           <button v-on:click="openMenuMobile('aboutUsMobile')">О нас ></button>
           <div id="aboutUsMobile">
             <ul class="list-disc ml-10">
-              <li><a href="#">Обращение директора</a></li>
-              <li><a href="#">Профиль</a></li>
-              <li><a href="#">История</a></li>
-              <li><a href="#">Руководство</a></li>
-              <li><a href="#">Структурные подразделения</a></li>
-              <li><a href="#">Задачи и функции</a></li>
-              <li><a href="#">Международное сотрудничество</a></li>
-              <li><a href="#">Вакансии</a></li>
+              <li><a href="/ceoMessage">Обращение директора</a></li>
+              <li><a href="/profile">Профиль</a></li>
+              <li><a href="/history">История</a></li>
+              <li><a href="/headliners">Руководство</a></li>
+              <li><a href="/structure">Структурные подразделения</a></li>
+              <li><a href="/function">Задачи и функции</a></li>
+              <li><a href="/membership">Международное сотрудничество</a></li>
+              <li><a href="/vacancy">Вакансии</a></li>
             </ul>
           </div>
         </div>
@@ -323,15 +323,15 @@
           <button v-on:click="openMenuMobile('ourServicesMobile')">Наши услуги></button>
           <div id="ourServicesMobile">
             <ul class="list-disc ml-10">
-              <li><a href="#">Депозитарные услуги</a></li>
-              <li><a href="#">Информационные услуги</a></li>
-              <li><a href="#">Консультативные услуги</a></li>
-              <li><a href="#">Электронное голосование</a></li>
-              <li><a href="#">Тарифы</a></li>
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">График приема</a></li>
-              <li><a href="#">Наши отзывы</a></li>
-              <li><a href="#">Техническое сопровождение</a></li>
+              <li><a href="/depoService">Депозитарные услуги</a></li>
+              <li><a href="/itService">Информационные услуги</a></li>
+              <li><a href="/consultService">Консультативные услуги</a></li>
+              <li><a href="/eVote">Электронное голосование</a></li>
+              <li><a href="/tarifs">Тарифы</a></li>
+              <li><a href="/contacts">Контакты</a></li>
+              <li><a href="/schedule">График приема</a></li>
+              <li><a href="/review">Наши отзывы</a></li>
+              <li><a href="/technicalSupport">Техническое сопровождение</a></li>
             </ul>
           </div>
         </div>
@@ -343,15 +343,15 @@
               <li><a href="#">Наблюдательный совет</a></li>
               <li><a href="#">Исполнительный орган</a></li>
               <li><a href="#">Служба внутреннего аудита</a></li>
-              <li><a href="#">Положение</a></li>
-              <li><a href="#">Устав</a></li>
+              <li><a href="/conditions">Положение</a></li>
+              <li><a href="/regulation">Устав</a></li>
               <li><a href="#">Перечень аффилированных лиц</a></li>
               <li><a href="#">Существенные факты</a></li>
-              <li><a href="#">Бизнес план</a></li>
-              <li><a href="#">Показатели эффективности</a></li>
+              <li><a href="/business">Бизнес план</a></li>
+              <li><a href="/kpi">Показатели эффективности</a></li>
               <li><a href="#">Стратегия развития</a></li>
-              <li><a href="#">Уставной фонд</a></li>
-              <li><a href="#">Финансовая отчетность</a></li>
+              <li><a href="/fund">Уставной фонд</a></li>
+              <li><a href="/financialReport">Финансовая отчетность</a></li>
             </ul>
           </div>
         </div>
@@ -360,16 +360,16 @@
           <button v-on:click="openMenuMobile('pressCenterMobile')">Пресс-центр ></button>
           <div id="pressCenterMobile">
             <ul class="list-disc ml-10">
-              <li><a href="#">Пресс - релизы</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Статьи</a></li>
-              <li><a href="#">Медиатека</a></li>
-              <li><a href="#">Статистическая информация</a></li>
-              <li><a href="#">DEPO-инфографика</a></li>
-              <li><a href="#">DEPO-дайджест</a></li>
-              <li><a href="#">DEPO-compass</a></li>
-              <li><a href="#">DEPO-вестник</a></li>
-              <li><a href="#">Нормативные документы</a></li>
+              <li><a href="/pressRelease">Пресс - релизы</a></li>
+              <li><a href="/news">Новости</a></li>
+              <li><a href="/articles">Статьи</a></li>
+              <li><a href="/media">Медиатека</a></li>
+              <li><a href="/statisticalInformation">Статистическая информация</a></li>
+              <li><a href="/depoInfo">DEPO-инфографика</a></li>
+              <li><a href="/depoDigest">DEPO-дайджест</a></li>
+              <li><a href="/depoCompass">DEPO-compass</a></li>
+              <li><a href="/depoVestnik">DEPO-вестник</a></li>
+              <li><a href="/regulatory">Нормативные документы</a></li>
             </ul>
           </div>
         </div>
@@ -378,12 +378,12 @@
           <button v-on:click="openMenuMobile('interactiveMobile')">Интерактивные услуги ></button>
           <div id="interactiveMobile">
             <ul class="list-disc ml-10">
-              <li><a href="#">Договор</a></li>
-              <li><a href="#">Бланки</a></li>
-              <li><a href="#">Словарь терминов</a></li>
-              <li><a href="#">ISIN и CFI коды</a></li>
-              <li><a href="#">Анкета опросник</a></li>
-              <li><a href="#">Онлайн-обращение</a></li>
+              <li><a href="/conditions">Договор</a></li>
+              <li><a href="/blanks">Бланки</a></li>
+              <li><a href="/glossary">Словарь терминов</a></li>
+              <li><a href="/isinAndcfi">ISIN и CFI коды</a></li>
+              <li><a href="/questionnaire">Анкета опросник</a></li>
+              <li><a href="/onlineReport">Онлайн-обращение</a></li>
             </ul>
           </div>
         </div>
