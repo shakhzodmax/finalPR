@@ -5,7 +5,7 @@
           <div class="flex justify-between">
             <a class="flex-none flex justify-center items-center" href="/">
               <img class="w-14 h-14 2xl:block xl:block lg:block md:hidden" src="~@/assets/csd.svg" alt="">
-              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <br> ЦЕННЫХ БУМАГ</p>
+              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> ЦЕННЫХ БУМАГ  </p>
             </a>
             <div class="flex justify-between 2xl:text-base xl:text-xs lg:text-xs">
               <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">О нас</button>
@@ -89,7 +89,7 @@
               <li class="font-bold"><a href="/ceoMessage">Обращение генерального директора</a></li>
               <li><a class="font-bold" href="/profile">Центральный депозитарий</a>
                 <ul>
-                  <li class="pt-5"><router-link to="/profile">Профиль</router-link></li>
+                  <li class="pt-5"><a href="/profile">Профиль</a></li>
                   <li><a href="/history">История</a></li>
                   <li><a href="/headliners">Руководство</a></li>
                   <li><a href="/structure">Структурные подразделения</a></li>
