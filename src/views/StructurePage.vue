@@ -46,7 +46,101 @@
     </div>
   </div>
   <div class="container mx-auto">
+    <div class="bg-white/50 flex justify-between border-2 rounded-2xl 2xl:mx-16">
+      <img src="~@/assets/membershipDiv.png" alt="">
+        <div class="flex-col pl-8 justify-center items-center">
+          <p class="font-bold text-lg 2xl:mt-5">Начальник управления по развитию бизнес-процессов,
+            внедрению новых сервисов и международного сотрудничества</p>
+          <span class="text-sky-500 2xl:text-2xl font-black">Садикова Дилфуза Хайдаралиевна</span>
+          <p class="mt-14">Телефон: (+99871) 267-36-94</p>
+          <p>Электронная почта: dilfuza@deponet.uz</p>
+        </div>
+        <div class="flex-col pr-0.1">
+          <div class="gray  rounded-tr-lg h-1/3 w-2 bg-gray-400"></div>
+          <div class="green h-1/3 w-2 bg-green-400"></div>
+          <div class="blue  rounded-br-lg h-1/3 w-2 bg-sky-400"></div>
+        </div>
+    </div>
 
+    <div class="bg-white/50 flex justify-between border-2 rounded-2xl 2xl:mx-16 my-10">
+      <img src="~@/assets/cooperateDiv.png" alt="">
+      <div class="flex-col pl-8 justify-center items-center mr-46">
+        <p class="font-bold text-lg 2xl:mt-5">Начальник управление по обслуживанию  клиентов
+          Центрального депозитария и  государственных органов </p>
+        <span class="text-sky-500 2xl:text-2xl font-black">Ташов Файзулла Муратович</span>
+        <p class="mt-14">Телефон: (+99871) 267-36-42</p>
+        <p>Электронная почта: fayzi@deponet.uz</p>
+      </div>
+      <div class="flex-col pr-0.1">
+        <div class="gray  rounded-tr-lg h-1/3 w-2 bg-gray-400"></div>
+        <div class="green h-1/3 w-2 bg-green-400"></div>
+        <div class="blue  rounded-br-lg h-1/3 w-2 bg-sky-400"></div>
+      </div>
+    </div>
+
+    <div class="bg-white/50 flex justify-between border-2 rounded-2xl 2xl:mx-16 my-10">
+      <img src="~@/assets/cooperateDiv.png" alt="">
+      <div class="flex-col pl-8 justify-center items-center mr-46">
+        <p class="font-bold text-lg 2xl:mt-5">Начальник управление по обслуживанию  клиентов
+          Центрального депозитария и  государственных органов </p>
+        <span class="text-sky-500 2xl:text-2xl font-black">Ташов Файзулла Муратович</span>
+        <p class="mt-14">Телефон: (+99871) 267-36-42</p>
+        <p>Электронная почта: fayzi@deponet.uz</p>
+      </div>
+      <div class="flex-col pr-0.1">
+        <div class="gray  rounded-tr-lg h-1/3 w-2 bg-gray-400"></div>
+        <div class="green h-1/3 w-2 bg-green-400"></div>
+        <div class="blue  rounded-br-lg h-1/3 w-2 bg-sky-400"></div>
+      </div>
+    </div>
+
+    <div class="bg-white/50 flex justify-between border-2 rounded-2xl 2xl:mx-16 my-10">
+      <img src="~@/assets/cooperateDiv.png" alt="">
+      <div class="flex-col pl-8 justify-center items-center mr-46">
+        <p class="font-bold text-lg 2xl:mt-5">Начальник управление по обслуживанию  клиентов
+          Центрального депозитария и  государственных органов </p>
+        <span class="text-sky-500 2xl:text-2xl font-black">Ташов Файзулла Муратович</span>
+        <p class="mt-14">Телефон: (+99871) 267-36-42</p>
+        <p>Электронная почта: fayzi@deponet.uz</p>
+      </div>
+      <div class="flex-col pr-0.1">
+        <div class="gray  rounded-tr-lg h-1/3 w-2 bg-gray-400"></div>
+        <div class="green h-1/3 w-2 bg-green-400"></div>
+        <div class="blue  rounded-br-lg h-1/3 w-2 bg-sky-400"></div>
+      </div>
+    </div>
+
+    <div class="bg-white/50 flex justify-between border-2 rounded-2xl 2xl:mx-16 my-10">
+      <img src="~@/assets/cooperateDiv.png" alt="">
+      <div class="flex-col pl-8 justify-center items-center mr-46">
+        <p class="font-bold text-lg 2xl:mt-5">Начальник управление по обслуживанию  клиентов
+          Центрального депозитария и  государственных органов </p>
+        <span class="text-sky-500 2xl:text-2xl font-black">Ташов Файзулла Муратович</span>
+        <p class="mt-14">Телефон: (+99871) 267-36-42</p>
+        <p>Электронная почта: fayzi@deponet.uz</p>
+      </div>
+      <div class="flex-col pr-0.1">
+        <div class="gray  rounded-tr-lg h-1/3 w-2 bg-gray-400"></div>
+        <div class="green h-1/3 w-2 bg-green-400"></div>
+        <div class="blue  rounded-br-lg h-1/3 w-2 bg-sky-400"></div>
+      </div>
+    </div>
+
+    <div class="bg-white/50 flex justify-between border-2 rounded-2xl 2xl:mx-16 my-10">
+      <img src="~@/assets/cooperateDiv.png" alt="">
+      <div class="flex-col pl-8 justify-center items-center mr-46">
+        <p class="font-bold text-lg 2xl:mt-5">Начальник управление по обслуживанию  клиентов
+          Центрального депозитария и  государственных органов </p>
+        <span class="text-sky-500 2xl:text-2xl font-black">Ташов Файзулла Муратович</span>
+        <p class="mt-14">Телефон: (+99871) 267-36-42</p>
+        <p>Электронная почта: fayzi@deponet.uz</p>
+      </div>
+      <div class="flex-col pr-0.1">
+        <div class="gray  rounded-tr-lg h-1/3 w-2 bg-gray-400"></div>
+        <div class="green h-1/3 w-2 bg-green-400"></div>
+        <div class="blue  rounded-br-lg h-1/3 w-2 bg-sky-400"></div>
+      </div>
+    </div>
   </div>
 </template>
 
