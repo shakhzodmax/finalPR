@@ -62,7 +62,7 @@
     </div>
 
     <div class="rounded-menus 2xl:block xl:block lg:block md:hidden hidden">
-      <div class="mt-3 bg-white flex justify-center 2xl:space-x-8 2xl:py-5 2xl:text-base xl:space-x-4 xl:py-5 lg:py-2 xl:text-sm lg:text-xs lg:space-x-3 lg:py-4">
+      <div class="mt-3 bg-white flex justify-center 2xl:space-x-8 2xl:py-5 2xl:text-base xl:space-x-4 xl:py-5 lg:py-2 xl:text-sm lg:text-xs lg:space-x-3 lg:py-4 md: justi ">
         <div class="hover:text-sky-500 duration-300">
           <a href="#">
             <img class="inline-block mx-auto rounded-full p-1 ring-2 ring-gray-300 dark:ring-gray-500 hover:ring-sky-500" src="~@/assets/depServivces.png" alt="">

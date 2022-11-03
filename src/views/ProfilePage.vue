@@ -1,9 +1,9 @@
 <template>
   <div class="main h-mainPng bg-no-repeat bg-center">
     <div class="container mx-auto text-white text-center">
-      <div class="pt-mainPt text-4xl font-black mb-1">О нас</div>
-      <div>Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
-      <div class="h-14 bg-sky-600 mt-24 flex justify-start items-center px-8">
+      <div class="pt-mainPt  2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-2xl font-black mb-1">О нас</div>
+      <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm">Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
+      <div class="h-14 bg-sky-600 2xl:mt-24 xl:mt-24 lg:mt-14 md:mt-14 flex justify-start items-center px-8  2xl:block xl:block lg:block md:block hidden rounded-md">
         <nav class="flex px-5 py-3 text-white" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-10">
             <li class="inline-flex items-center">
@@ -39,7 +39,7 @@
               <div class="w-5 h-1 bg-green-400"></div>
               <div class="w-3 h-1 bg-sky-400"></div>
             </div>
-            <div class="text-2xl font-bold mb-16">Профиль</div>
+            <div class="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-xl font-bold mb-16">Профиль</div>
           </div>
         </div>
       </div>
@@ -48,7 +48,8 @@
   <div class="bg-sky-600 py-8">
     <div class="container mx-auto">
       <div class="flex justify-center items-center space-x-20">
-        <div class="text-white text-xl text-justify">Государственное предприятие «Центральный депозитарий ценных бумаг»  - организация, обеспечивающая единую  систему хранения, учета прав и движения ценных бумаг в депозитарной системе Республики Узбекистан.
+        <div class="text-white 2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm 
+        2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-5 px-5 text-justify">Государственное предприятие «Центральный депозитарий ценных бумаг»  - организация, обеспечивающая единую  систему хранения, учета прав и движения ценных бумаг в депозитарной системе Республики Узбекистан.
           Центральный депозитарий осуществляет свою деятельность согласно Закону Республики Узбекистан “О рынке ценных бумаг” и других законодательных норм республики. Статья 39 и 40 вышеназванного Закона устанавливает перечень исключительных функций, и в том числе права и обязанности Центрального депозитария ценных бумаг.</div>
       </div>
     </div>
@@ -56,9 +57,9 @@
 
   <div class="py-10">
     <div class="container mx-auto text-justify">
-      <div class="text-center text-lg font-bold">В соответствии с Законом Республики Узбекистан «О рынке ценных бумаг» Центральному депозитарию ценных бумаг возложены:</div>
+      <div class="text-center 2xl:text-lg  xl:text-lg lg:text-lg md:text-lg sm:text-sm text-sm 2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-5 px-5 font-bold">В соответствии с Законом Республики Узбекистан «О рынке ценных бумаг» Центральному депозитарию ценных бумаг возложены:</div>
       <br><br>
-      <ul class="list-disc ml-12">
+      <ul class="list-disc ml-5  2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-5 px-5 2xl:text-lg  xl:text-lg lg:text-lg md:text-lg sm:text-sm text-sm">
         <li>Постановка на учет ценных бумаг;</li>
         <li>хранение документарных ценных бумаг;</li>
         <li>хранение документов, подтверждающих выпуск ценных бумаг;</li>
@@ -73,12 +74,14 @@
         <li>присвоение международных кодов эмиссионным ценным бумагам, выпущенным резидентами Республики Узбекистан;</li>
         <li>сбор и систематизация информации о движении эмиссионных ценных бумаг по счетам депо.</li>
       </ul>
+      <div class=" 2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-5 px-5 2xl:text-lg  xl:text-lg lg:text-lg md:text-lg sm:text-sm text-sm">
       <br><br>
       Центральный депозитарий ценных бумаг - крупнейший институт на фондовом рынке республики. Кроме выполнения возложенных исключительных функций, Центральный депозитарий является инициаторам внедрения единых стандартов осуществления депозитарных операций, единых форматов электронного взаимодействия, международных стандартов электронных сообщений и идентификации ценных бумаг, а также расширения перечня корпоративных действий, обслуживаемых депозитариями.  Также, обеспечивает ведение единой базы корпоративных ценных бумаг, единой базы депонентов (в том числе и эмитентов), принимает активное участие в разработке нормативной базы, регулирующей деятельность депозитариев республики.
       <br><br>
       Имеет современное техническое и программное обеспечение с модернизированным компьютерным оборудованием, что еще раз доказывает надежность и безопасность профессиональной работы  Центрального депозитария.
       <br><br>
       Центральный депозитарий был создан Постановлением Кабинета Министров Республики Узбекистан № 263 от 21 мая 1999 г. «О вопросах организации и деятельности Центрального депозитария ценных бумаг».
+    </div>
     </div>
   </div>
 </template>
