@@ -8,16 +8,16 @@
               <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden uppercase"> {{ $t('home-page.logo-text-part-1') }} <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> {{ $t('home-page.logo-text-part-2') }}  </p>
             </a>
             <div class="flex justify-between 2xl:text-base xl:text-xs lg:text-xs">
-              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">О нас</button>
-              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Наши услуги</button>
-              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Корпоративное управление</button>
-              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Пресс-центр</button>
-              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Интерактивные услуги</button>
+              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.about-us') }}</button>
+              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.our-services') }}</button>
+              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.cooperate') }}</button>
+              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.press-center') }}</button>
+              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.interactive') }}</button>
             </div>
 
-            <div class="locale-changer text-black">
-              <select @change="updateLanguage()" v-model="$i18n.locale">
-                <option v-for="(locale, i) in locales" :key="`locale-${i}`" :value="locale">
+            <div class="locale-changer items-center">
+              <select class="bg-transparent border-0 mt-2 text-white" @change="updateLanguage()" v-model="$i18n.locale">
+                <option class="text-black" v-for="(locale, i) in locales" :key="`locale-${i}`" :value="locale">
                   {{ locale.toUpperCase() }}
                 </option>
               </select>
@@ -38,28 +38,28 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">О нас</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{ $t('home-page.about-us') }}</div>
                 </div>
               </div>
-              <div class="ml-5">Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
+              <div class="ml-5">{{ $t('home-page.about-us-intro') }}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li class="font-bold"><a href="/ceoMessage">Обращение генерального директора</a></li>
-              <li><a class="font-bold" href="/profile">Центральный депозитарий</a>
+              <li class="font-bold"><a href="/ceoMessage">{{ $t('home-page.ceo-message') }}</a></li>
+              <li><a class="font-bold" href="/profile">{{ $t('home-page.profile') }}</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">Профиль</a></li>
-                  <li><a href="/history">История</a></li>
-                  <li><a href="/headliners">Руководство</a></li>
-                  <li><a href="/structure">Структурные подразделения</a></li>
+                  <li class="pt-5"><a href="/profile">{{ $t('home-page.profile') }}</a></li>
+                  <li><a href="/history">{{ $t('home-page.history') }}</a></li>
+                  <li><a href="/headliners">{{ $t('home-page.headliners') }}</a></li>
+                  <li><a href="/structure">{{ $t('home-page.structure') }}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/function">Задачи и функции</a></li>
-              <li class="font-bold"><a href="/membership">Международное сотрудничество</a></li>
-              <li class="font-bold"><a href="/vacancy">Вакансии</a></li>
+              <li class="font-bold"><a href="/function">{{ $t('home-page.function') }}</a></li>
+              <li class="font-bold"><a href="/membership">{{ $t('home-page.membership') }}</a></li>
+              <li class="font-bold"><a href="/vacancy">{{ $t('home-page.vacancy') }}</a></li>
             </ul>
           </div>
         </div>
@@ -88,10 +88,10 @@
             <ul class="flex justify-around">
               <li><a class=" font-bold" href="/depoService">Услуги</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">Депозитарные услуги</a></li>
-                  <li><a href="/history">Информационные услуги</a></li>
-                  <li><a href="/headliners">Консультативные услуги</a></li>
-                  <li><a href="">Электронное голосование</a></li>
+                  <li class="pt-5"><a href="/depoService">Депозитарные услуги</a></li>
+                  <li><a href="/itService">Информационные услуги</a></li>
+                  <li><a href="/consultService">Консультативные услуги</a></li>
+                  <li><a href="/eVote">Электронное голосование</a></li>
                 </ul>
               </li>
               <li class="font-bold"><a href="/tarif">Тарифы</a></li>
@@ -374,9 +374,10 @@ export default {
     }
   },
 };
+</script>
 
+<script setup>
 let blockNames = ['aboutUs', 'ourServices', 'cooperate', 'pressCenter', 'interactive'];
-// eslint-disable-next-line no-unused-vars
 function openMenu(menuName){
 
   closeOtherMenus(menuName).then(()=>{
@@ -393,7 +394,6 @@ async function closeOtherMenus(menuName){
 
 // mobile menu navigation starts
 let blockMobileNames = ['aboutUsMobile', 'ourServicesMobile', 'cooperateMobile', 'pressCenterMobile', 'interactiveMobile'];
-// eslint-disable-next-line no-unused-vars
 function openMenuMobile(menuNameMobile){
 
   closeOtherMobileMenus(menuNameMobile).then(()=>{
@@ -408,7 +408,6 @@ async function closeOtherMobileMenus(menuNameMobile){
   });
 }
 // mobile menu navigation ends
-// eslint-disable-next-line no-unused-vars
 function openHamburgerMenu() {
   const close = document.getElementById("hamburgerOpen");
   close.classList.add("hidden");
@@ -417,7 +416,7 @@ function openHamburgerMenu() {
   const menu = document.getElementById("hamburgerMenu");
   menu.classList.remove("hidden")
 }
-// eslint-disable-next-line no-unused-vars
+
 function closeHamburgerMenu() {
   const close = document.getElementById("hamburgerOpen");
   close.classList.remove("hidden");
@@ -426,6 +425,10 @@ function closeHamburgerMenu() {
   const menu = document.getElementById("hamburgerMenu");
   menu.classList.add("hidden")
 }
+console.log(openMenu)
+console.log(openMenuMobile)
+console.log(openHamburgerMenu)
+console.log(closeHamburgerMenu)
 </script>
 
 <style scoped>
