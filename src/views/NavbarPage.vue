@@ -5,60 +5,22 @@
           <div class="flex justify-between">
             <a class="flex-none flex justify-center items-center" href="/">
               <img class="w-14 h-14 2xl:block xl:block lg:block md:hidden" src="~@/assets/csd.svg" alt="">
-              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> ЦЕННЫХ БУМАГ  </p>
+              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden uppercase"> {{ $t('home-page.logo-text-part-1') }} <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> {{ $t('home-page.logo-text-part-2') }}  </p>
             </a>
             <div class="flex justify-between 2xl:text-base xl:text-xs lg:text-xs">
-              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">О нас</button>
-              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Наши услуги</button>
-              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Корпоративное управление</button>
-              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Пресс-центр</button>
-              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Интерактивные услуги</button>
+              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.about-us') }}</button>
+              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.our-services') }}</button>
+              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.cooperate') }}</button>
+              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.press-center') }}</button>
+              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.interactive') }}</button>
             </div>
 
-            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex justify-center items-center p-2 text-sm text-white cursor-pointer hover:text-white hover:bg-sky-500 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 rounded-full mr-2" viewBox="0 0 512 512">
-                <circle fill="#D52B1E" r="1082"/>
-                <path fill="#0039A6" d="m0,0h900v400H0"/>
-                <path fill="#FFF" d="m0,0h900v200H0"/>
-              </svg>
-              RU
-            </button>
-            <!-- Dropdown -->
-            <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" id="language-dropdown-menu">
-              <ul class="py-1" role="none">
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>
-                      English (US)
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
-                      Deutsch
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>
-                      Italiano
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
-                      中文 (繁體)
-                    </div>
-                  </a>
-                </li>
-              </ul>
+            <div class="locale-changer items-center">
+              <select class="bg-transparent border-0 mt-2 text-white" @change="updateLanguage()" v-model="$i18n.locale">
+                <option class="text-black" v-for="(locale, i) in locales" :key="`locale-${i}`" :value="locale">
+                  {{ locale.toUpperCase() }}
+                </option>
+              </select>
             </div>
 
           </div>
@@ -76,28 +38,28 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">О нас</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{ $t('home-page.about-us') }}</div>
                 </div>
               </div>
-              <div class="ml-5">Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
+              <div class="ml-5">{{ $t('home-page.about-us-intro') }}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li class="font-bold"><a href="/ceoMessage">Обращение генерального директора</a></li>
-              <li><a class="font-bold" href="/profile">Центральный депозитарий</a>
+              <li class="font-bold"><a href="/ceoMessage">{{ $t('home-page.ceo-message') }}</a></li>
+              <li><a class="font-bold" href="/profile">{{ $t('home-page.profile') }}</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">Профиль</a></li>
-                  <li><a href="/history">История</a></li>
-                  <li><a href="/headliners">Руководство</a></li>
-                  <li><a href="/structure">Структурные подразделения</a></li>
+                  <li class="pt-5"><a href="/profile">{{ $t('home-page.profile') }}</a></li>
+                  <li><a href="/history">{{ $t('home-page.history') }}</a></li>
+                  <li><a href="/headliners">{{ $t('home-page.headliners') }}</a></li>
+                  <li><a href="/structure">{{ $t('home-page.structure') }}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/function">Задачи и функции</a></li>
-              <li class="font-bold"><a href="/membership">Международное сотрудничество</a></li>
-              <li class="font-bold"><a href="/vacancy">Вакансии</a></li>
+              <li class="font-bold"><a href="/function">{{ $t('home-page.function') }}</a></li>
+              <li class="font-bold"><a href="/membership">{{ $t('home-page.membership') }}</a></li>
+              <li class="font-bold"><a href="/vacancy">{{ $t('home-page.vacancy') }}</a></li>
             </ul>
           </div>
         </div>
@@ -126,10 +88,10 @@
             <ul class="flex justify-around">
               <li><a class=" font-bold" href="/depoService">Услуги</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">Депозитарные услуги</a></li>
-                  <li><a href="/history">Информационные услуги</a></li>
-                  <li><a href="/headliners">Консультативные услуги</a></li>
-                  <li><a href="">Электронное голосование</a></li>
+                  <li class="pt-5"><a href="/depoService">Депозитарные услуги</a></li>
+                  <li><a href="/itService">Информационные услуги</a></li>
+                  <li><a href="/consultService">Консультативные услуги</a></li>
+                  <li><a href="/eVote">Электронное голосование</a></li>
                 </ul>
               </li>
               <li class="font-bold"><a href="/tarif">Тарифы</a></li>
@@ -393,6 +355,27 @@
     </div>
 </template>
 
+<script>
+export default {
+  name: "LocaleSwitcher",
+  data() {
+    return { locales: ["ru", "en", "uz"] };
+  },
+  methods: {
+    updateLanguage() {
+      sessionStorage.setItem("locale", this.$i18n.locale);
+    },
+  },
+  mounted() {
+    if (sessionStorage.getItem("locale")) {
+      this.$i18n.locale = sessionStorage.getItem("locale");
+    } else {
+      sessionStorage.setItem("locale", this.$i18n.locale);
+    }
+  },
+};
+</script>
+
 <script setup>
 let blockNames = ['aboutUs', 'ourServices', 'cooperate', 'pressCenter', 'interactive'];
 function openMenu(menuName){
@@ -425,7 +408,6 @@ async function closeOtherMobileMenus(menuNameMobile){
   });
 }
 // mobile menu navigation ends
-
 function openHamburgerMenu() {
   const close = document.getElementById("hamburgerOpen");
   close.classList.add("hidden");
@@ -434,6 +416,7 @@ function openHamburgerMenu() {
   const menu = document.getElementById("hamburgerMenu");
   menu.classList.remove("hidden")
 }
+
 function closeHamburgerMenu() {
   const close = document.getElementById("hamburgerOpen");
   close.classList.remove("hidden");
@@ -442,6 +425,10 @@ function closeHamburgerMenu() {
   const menu = document.getElementById("hamburgerMenu");
   menu.classList.add("hidden")
 }
+console.log(openMenu)
+console.log(openMenuMobile)
+console.log(openHamburgerMenu)
+console.log(closeHamburgerMenu)
 </script>
 
 <style scoped>
