@@ -10,6 +10,23 @@ import FooTer from "@/views/FooterPage";
 
 export default {
   components: {NavBar,FooTer},
+    name: "LocaleSwitcher",
+    data() {
+      return { locales: ["ru", "en", "uz"] };
+    },
+    methods: {
+      updateLanguage() {
+        sessionStorage.setItem("locale", this.$i18n.locale);
+      },
+    },
+    mounted() {
+      if (sessionStorage.getItem("locale")) {
+        this.$i18n.locale = sessionStorage.getItem("locale");
+      } else {
+        sessionStorage.setItem("locale", this.$i18n.locale);
+      }
+    },
+
 }
 </script>
 
