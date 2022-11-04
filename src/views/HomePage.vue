@@ -1,14 +1,14 @@
 <template>
 <div class="w-full 2xl:pt-navTop xl:pt-navTop lg:pt-navTop">
-  <div class="flex justify-center">
+  <div class="flex justify-center ">
     <div class="item-first flex bg-slate-200 w-1/2 py-4 hover:bg-slate-300 duration-500">
       <div class="container mx-auto flex justify-center">
-        <div class="first-part-one mr-10">
-          <div class="h-24 w-24 2xl:block xl:block lg:block md:block sm:block hidden bg-sky-800">
+        <div class="first-part-one mr-10 ">
+          <div class="rounded-md h-24 w-24 2xl:block xl:block lg:block md:block sm:block hidden bg-sky-800">
             <img class="" src="~@/assets/iconOne.svg" alt="pc.svg">
           </div>
         </div>
-        <div class="first-part-two">
+        <div class="first-part-two ">
           <div class="2xl:text-base xl:text-base lg:text-base md:lg-base text-sm">
             <p>ПЕРСОНАЛЬНЫЙ КАБИНЕТ</p>
             <p class="text-center font-black 2xl:block xl:block lg:block md:block hidden">MYCABINET</p>
@@ -30,7 +30,7 @@
       <div class="container mx-auto flex justify-center">
         <div class="item-first mr-10">
           <div class="first-part-one">
-            <div class="h-24 w-24 2xl:flex xl:flex lg:flex md:flex sm:flex hidden bg-sky-800 flex justify-center items-center">
+            <div class="rounded-md h-24 w-24 2xl:flex xl:flex lg:flex md:flex sm:flex hidden bg-sky-800 flex justify-center items-center">
               <img class="" src="~@/assets/iconTwo.svg" alt="e-vote.svg">
             </div>
           </div>
