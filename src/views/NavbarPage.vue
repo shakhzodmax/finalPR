@@ -5,60 +5,22 @@
           <div class="flex justify-between">
             <a class="flex-none flex justify-center items-center" href="/">
               <img class="w-14 h-14 2xl:block xl:block lg:block md:hidden" src="~@/assets/csd.svg" alt="">
-              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> ЦЕННЫХ БУМАГ  </p>
+              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden uppercase"> {{ $t('navbar.logo-text-part-1') }} <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> {{ $t('navbar.logo-text-part-2') }}  </p>
             </a>
             <div class="flex justify-between 2xl:text-base xl:text-xs lg:text-xs">
-              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">О нас</button>
-              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Наши услуги</button>
-              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Корпоративное управление</button>
-              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Пресс-центр</button>
-              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">Интерактивные услуги</button>
+              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.about-us') }}</button>
+              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.our-services') }}</button>
+              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.cooperate') }}</button>
+              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.press-center') }}</button>
+              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.interactive') }}</button>
             </div>
 
-            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex justify-center items-center p-2 text-sm text-white cursor-pointer hover:text-white hover:bg-sky-500 dark:hover:bg-gray-700 dark:hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 rounded-full mr-2" viewBox="0 0 512 512">
-                <circle fill="#D52B1E" r="1082"/>
-                <path fill="#0039A6" d="m0,0h900v400H0"/>
-                <path fill="#FFF" d="m0,0h900v200H0"/>
-              </svg>
-              RU
-            </button>
-            <!-- Dropdown -->
-            <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" id="language-dropdown-menu">
-              <ul class="py-1" role="none">
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>
-                      English (US)
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
-                      Deutsch
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>
-                      Italiano
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                    <div class="inline-flex items-center">
-                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
-                      中文 (繁體)
-                    </div>
-                  </a>
-                </li>
-              </ul>
+            <div class="locale-changer items-center">
+              <select class="bg-transparent border-0 mt-2 text-white" @change="updateLanguage()" v-model="$i18n.locale">
+                <option class="text-black" v-for="(locale, i) in locales" :key="`locale-${i}`" :value="locale">
+                  {{ locale.toUpperCase() }}
+                </option>
+              </select>
             </div>
 
           </div>
@@ -76,28 +38,28 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">О нас</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{ $t('navbar.about-us') }}</div>
                 </div>
               </div>
-              <div class="ml-5">Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
+              <div class="ml-5">{{ $t('navbar.about-us-intro') }}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li class="font-bold"><a href="/ceoMessage">Обращение генерального директора</a></li>
-              <li><a class="font-bold" href="/profile">Центральный депозитарий</a>
+              <li class="font-bold"><a href="/ceoMessage">{{ $t('navbar.ceo-message') }}</a></li>
+              <li><a class="font-bold" href="/profile">{{ $t('navbar.profile') }}</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">Профиль</a></li>
-                  <li><a href="/history">История</a></li>
-                  <li><a href="/headliners">Руководство</a></li>
-                  <li><a href="/structure">Структурные подразделения</a></li>
+                  <li class="pt-5"><a href="/profile">{{ $t('navbar.profile') }}</a></li>
+                  <li><a href="/history">{{ $t('navbar.history') }}</a></li>
+                  <li><a href="/headliners">{{ $t('navbar.headliners') }}</a></li>
+                  <li><a href="/structure">{{ $t('navbar.structure') }}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/function">Задачи и функции</a></li>
-              <li class="font-bold"><a href="/membership">Международное сотрудничество</a></li>
-              <li class="font-bold"><a href="/vacancy">Вакансии</a></li>
+              <li class="font-bold"><a href="/function">{{ $t('navbar.function') }}</a></li>
+              <li class="font-bold"><a href="/membership">{{ $t('navbar.membership') }}</a></li>
+              <li class="font-bold"><a href="/vacancy">{{ $t('navbar.vacancy') }}</a></li>
             </ul>
           </div>
         </div>
@@ -114,32 +76,32 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold font-bold">Наши услуги</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base  font-bold">{{$t('navbar.our-services')}}</div>
                 </div>
               </div>
-              <div class="ml-5">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
+              <div class="ml-5">{{$t('navbar.our-services-intro')}}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li><a class=" font-bold" href="/depoService">Услуги</a>
+              <li><a class=" font-bold" href="/depoService">{{$t('navbar.services')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">Депозитарные услуги</a></li>
-                  <li><a href="/history">Информационные услуги</a></li>
-                  <li><a href="/headliners">Консультативные услуги</a></li>
-                  <li><a href="">Электронное голосование</a></li>
+                  <li class="pt-5"><a href="/depoService">{{$t('navbar.depository-services')}}</a></li>
+                  <li><a href="/itService">{{$t('navbar.information-services')}}</a></li>
+                  <li><a href="/consultService">{{$t('navbar.advisory-services')}}</a></li>
+                  <li><a href="/eVote">{{$t('navbar.electronic-voting-services')}}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/tarif">Тарифы</a></li>
-              <li><a class="font-bold" href="/contacts">Контакты</a>
+              <li class="font-bold"><a href="/tarif">{{$t('navbar.tarifs')}}</a></li>
+              <li><a class="font-bold" href="/contacts">{{$t('navbar.contacts')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/schedule">График приема</a></li>
-                  <li><a href="/review">Наши отзывы </a></li>
+                  <li class="pt-5"><a href="/schedule">{{$t('navbar.reception-schedule')}}</a></li>
+                  <li><a href="/review">{{$t('navbar.our-reviews')}}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/technicalSupport">Техническое сопровождение</a></li>
+              <li class="font-bold"><a href="/technicalSupport">{{$t('navbar.technical-support')}}</a></li>
             </ul>
           </div>
         </div>
@@ -156,45 +118,47 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">Корпоративное управление</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">
+                    {{$t('navbar.cooperate')}}
+                  </div>
                 </div>
               </div>
-              <div class="ml-5">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
+              <div class="ml-5">{{$t('navbar.cooperate-intro')}}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li><a class=" font-bold" href="#">Органы управления и контроля</a>
+              <li><a class=" font-bold" href="#">{{$t('navbar.management-control')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Наблюдательный совет</a></li>
-                  <li><a href="#">Исполнительный орган</a></li>
-                  <li><a href="#">Служба внутреннего аудита</a></li>
+                  <li class="pt-5"><a href="#">{{$t('navbar.supervisory-board')}}</a></li>
+                  <li><a href="#">{{$t('navbar.executive-body')}}</a></li>
+                  <li><a href="#">{{$t('navbar.internal-audit')}}</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="/document">Документы</a>
+              <li><a class="font-bold" href="/document">{{$t('navbar.documents')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/conditions">Положение</a></li>
-                  <li><a href="/regulation">Устав</a></li>
+                  <li class="pt-5"><a href="/conditions">{{$t('navbar.order')}}</a></li>
+                  <li><a href="/regulation">{{$t('navbar.regulation')}}</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="#">Раскрытие информации</a>
+              <li><a class="font-bold" href="#">{{$t('navbar.disclosure-information')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="#">Перечень аффилированных лиц</a></li>
-                  <li><a href="#">Существенные факты</a></li>
-                  <li><a href="/business">Бизнес план</a></li>
-                  <li><a href="/kpi">Показатели эффективности</a></li>
-                  <li><a href="#">Стратегия развития</a></li>
+                  <li class="pt-5"><a href="#">{{$t('navbar.list-affiliated')}}</a></li>
+                  <li><a href="#">{{$t('navbar.essential-facts')}}</a></li>
+                  <li><a href="/business">{{$t('navbar.bussines-plan')}}</a></li>
+                  <li><a href="/kpi">{{$t('navbar.performance-indicators')}}</a></li>
+                  <li><a href="#">{{$t('navbar.development-strategy')}}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/fund">Уставной фонд</a></li>
-              <li><a class="font-bold" href="/financialReport">Финансовая отчетность</a>
+              <li class="font-bold"><a href="/fund">{{$t('navbar.authorized-capital')}}</a></li>
+              <li><a class="font-bold" href="/financialReport">{{$t('navbar.financial-statements')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/financialReport">Годовые и квартальные отчеты</a></li>
-                  <li><a href="financialReport">Отчетность по МСФО</a></li>
-                  <li><a href="financialReport">Сведение о закупках</a></li>
-                  <li><a href="financialReport">Результаты внешнего аудита</a></li>
+                  <li class="pt-5"><a href="/financialReport">{{$t('navbar.annual-reports')}}</a></li>
+                  <li><a href="financialReport">{{$t('navbar.ifrs-reporting')}}</a></li>
+                  <li><a href="financialReport">{{$t('navbar.information-purchases')}}</a></li>
+                  <li><a href="financialReport">{{$t('navbar.external-audit')}}</a></li>
                 </ul>
               </li>
             </ul>
@@ -213,34 +177,34 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">Пресс-центр</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{$t('navbar.press-center')}}</div>
                 </div>
               </div>
-              <div class="ml-5">Пресс-центр Центрального Депозитария ценных бумаг</div>
+              <div class="ml-5">{{$t('navbar.press-center-intro')}}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li><a class=" font-bold" href="/pressSecretary">Пресс-секретарь</a>
+              <li><a class=" font-bold" href="/pressSecretary">{{$t('navbar.press-secretary')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/pressRelease">Пресс - релизы</a></li>
-                  <li><a href="/news">Новости</a></li>
-                  <li><a href="/articles">Статьи</a></li>
+                  <li class="pt-5"><a href="/pressRelease">{{$t('navbar.press-releases')}}</a></li>
+                  <li><a href="/news">{{$t('navbar.news')}}</a></li>
+                  <li><a href="/articles">{{$t('navbar.articles')}}</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="/media">Медиатека</a></li>
-              <li class="font-bold"><a href="/statisticalInformation">Статистическая информация</a></li>
-              <li><a class="font-bold" href="#">Полезные материалы</a>
+              <li><a class="font-bold" href="/media">{{$t('navbar.media-library')}}</a></li>
+              <li class="font-bold"><a href="/statisticalInformation">{{$t('navbar.statistical-information')}}</a></li>
+              <li><a class="font-bold" href="#">{{$t('navbar.useful-materials')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/depoInfo">DEPO-инфографика</a></li>
-                  <li><a href="/depoDigest">DEPO-дайджест</a></li>
-                  <li><a href="/depoCompass">DEPO-compass</a></li>
-                  <li><a href="/depoVestnik">DEPO-вестник</a></li>
+                  <li class="pt-5"><a href="/depoInfo">{{$t('navbar.depo-infographics')}}</a></li>
+                  <li><a href="/depoDigest">{{$t('navbar.depo-digest')}}</a></li>
+                  <li><a href="/depoCompass">{{$t('navbar.depo-compass')}}</a></li>
+                  <li><a href="/depoVestnik">{{$t('navbar.depo-bulletin')}}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/regulatory">Нормативные документы</a></li>
+              <li class="font-bold"><a href="/regulatory">{{$t('navbar.regulatory-documents')}}</a></li>
             </ul>
           </div>
         </div>
@@ -257,26 +221,26 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">Интерактивные услуги</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{$t('navbar.interactive')}}</div>
                 </div>
               </div>
-              <div class="ml-5">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
+              <div class="ml-5">{{$t('navbar.interactive-intro')}}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li><a class=" font-bold" href="#">Документы</a>
+              <li><a class=" font-bold" href="#">{{$t('navbar.documents')}}</a>
                 <ul>
-                  <li class="pt-5"><a href="/contracts">Договор</a></li>
-                  <li><a href="/blanks">Бланки</a></li>
-                  <li><a href="/glossary">Словарь терминов</a></li>
+                  <li class="pt-5"><a href="/contracts">{{$t('navbar.contract')}}</a></li>
+                  <li><a href="/blanks">{{$t('navbar.forms')}}</a></li>
+                  <li><a href="/glossary">{{$t('navbar.dictionary-terms')}}</a></li>
                 </ul>
               </li>
-              <li><a class="font-bold" href="/isinAndcfi">ISIN и CFI коды</a></li>
-              <li><a class="font-bold" href="/questionnaire">Анкета опросник</a></li>
-              <li class="font-bold"><a href="/onlineReport">Онлайн-обращение</a></li>
+              <li><a class="font-bold" href="/isinAndcfi">{{$t('navbar.isin-cfi')}}</a></li>
+              <li><a class="font-bold" href="/questionnaire">{{$t('navbar.questionnaire')}}</a></li>
+              <li class="font-bold"><a href="/onlineReport">{{$t('navbar.online-appeal')}}</a></li>
             </ul>
           </div>
         </div>
@@ -289,7 +253,7 @@
       <div class="flex justify-between items-center px-10">
           <a class="flex justify-start items-center" href="/">
             <img class="w-14 h-14" src="~@/assets/csd.svg" alt="">
-            <p class="text-xs pl-1 text-white">ЦЕНТРАЛЬНЫЙ ДЕПОЗИТАРИЙ <br> ЦЕННЫХ БУМАГ</p>
+            <p class="text-xs pl-1 text-white">{{$t('navbar.logo-text-part-1')}}<br>{{$t('navbar.logo-text-part-2')}}</p>
           </a>
           <svg v-on:click="openHamburgerMenu()" id="hamburgerOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
@@ -304,86 +268,84 @@
       <div id="hamburgerMenu" class="hidden w-100 bg-sky-900 h-1/2 px-10 py-10 text-white">
 
         <div>
-          <button v-on:click="openMenuMobile('aboutUsMobile')">О нас ></button>
+          <button v-on:click="openMenuMobile('aboutUsMobile')">{{$t('navbar.about-us')}} ></button>
           <div id="aboutUsMobile">
             <ul class="list-disc ml-10">
-              <li><a href="/ceoMessage">Обращение директора</a></li>
-              <li><a href="/profile">Профиль</a></li>
-              <li><a href="/history">История</a></li>
-              <li><a href="/headliners">Руководство</a></li>
-              <li><a href="/structure">Структурные подразделения</a></li>
-              <li><a href="/function">Задачи и функции</a></li>
-              <li><a href="/membership">Международное сотрудничество</a></li>
-              <li><a href="/vacancy">Вакансии</a></li>
+              <li><a href="/ceoMessage">{{$t('navbar.ceo-message')}}</a></li>
+              <li><a href="/profile">{{$t('navbar.profile')}}</a></li>
+              <li><a href="/history">{{$t('navbar.history')}}</a></li>
+              <li><a href="/function">{{$t('navbar.function')}}</a></li>
+              <li><a href="/membership">{{$t('navbar.membership')}}</a></li>
+              <li><a href="/vacancy">{{$t('navbar.vacancy')}}</a></li>
             </ul>
           </div>
         </div>
 
         <div>
-          <button v-on:click="openMenuMobile('ourServicesMobile')">Наши услуги></button>
+          <button v-on:click="openMenuMobile('ourServicesMobile')">{{$t('navbar.our-services')}}></button>
           <div id="ourServicesMobile">
             <ul class="list-disc ml-10">
-              <li><a href="/depoService">Депозитарные услуги</a></li>
-              <li><a href="/itService">Информационные услуги</a></li>
-              <li><a href="/consultService">Консультативные услуги</a></li>
-              <li><a href="/eVote">Электронное голосование</a></li>
-              <li><a href="/tarifs">Тарифы</a></li>
-              <li><a href="/contacts">Контакты</a></li>
-              <li><a href="/schedule">График приема</a></li>
-              <li><a href="/review">Наши отзывы</a></li>
-              <li><a href="/technicalSupport">Техническое сопровождение</a></li>
+              <li><a href="/depoService">{{$t('navbar.depository-services')}}</a></li>
+              <li><a href="/itService">{{$t('navbar.information-services')}}</a></li>
+              <li><a href="/consultService">{{$t('navbar.advisory-services')}}</a></li>
+              <li><a href="/eVote">{{$t('navbar.electronic-voting-services')}}</a></li>
+              <li><a href="/tarifs">{{$t('navbar.tarifs')}}</a></li>
+              <li><a href="/contacts">{{$t('navbar.contacts')}}</a></li>
+              <li><a href="/schedule">{{$t('navbar.reception-schedule')}}</a></li>
+              <li><a href="/review">{{$t('navbar.our-reviews')}}</a></li>
+              <li><a href="/technicalSupport">{{$t('navbar.technical-support')}}</a></li>
             </ul>
           </div>
         </div>
 
         <div>
-          <button v-on:click="openMenuMobile('cooperateMobile')">Корпоративное управление ></button>
+          <button v-on:click="openMenuMobile('cooperateMobile')">{{$t('navbar.cooperate')}}></button>
           <div id="cooperateMobile">
             <ul class="list-disc ml-10">
-              <li><a href="#">Наблюдательный совет</a></li>
-              <li><a href="#">Исполнительный орган</a></li>
-              <li><a href="#">Служба внутреннего аудита</a></li>
-              <li><a href="/conditions">Положение</a></li>
-              <li><a href="/regulation">Устав</a></li>
-              <li><a href="#">Перечень аффилированных лиц</a></li>
-              <li><a href="#">Существенные факты</a></li>
-              <li><a href="/business">Бизнес план</a></li>
-              <li><a href="/kpi">Показатели эффективности</a></li>
-              <li><a href="#">Стратегия развития</a></li>
-              <li><a href="/fund">Уставной фонд</a></li>
-              <li><a href="/financialReport">Финансовая отчетность</a></li>
+              <li><a href="#">{{$t('navbar.supervisory-board')}}</a></li>
+              <li><a href="#">{{$t('navbar.executive-body')}}</a></li>
+              <li><a href="#">{{$t('navbar.internal-audit')}}</a></li>
+              <li><a href="/conditions">{{$t('navbar.order')}}</a></li>
+              <li><a href="/regulation">{{$t('navbar.regulation')}}</a></li>
+              <li><a href="#">{{$t('navbar.list-affiliated')}}</a></li>
+              <li><a href="#">{{$t('navbar.essential-facts')}}</a></li>
+              <li><a href="/business">{{$t('navbar.bussines-plan')}}</a></li>
+              <li><a href="/kpi">{{$t('navbar.performance-indicators')}}</a></li>
+              <li><a href="#">{{$t('navbar.development-strategy')}}</a></li>
+              <li><a href="/fund">{{$t('navbar.authorized-capital')}}</a></li>
+              <li><a href="/financialReport">{{$t('navbar.financial-statements')}}</a></li>
             </ul>
           </div>
         </div>
 
         <div>
-          <button v-on:click="openMenuMobile('pressCenterMobile')">Пресс-центр ></button>
+          <button v-on:click="openMenuMobile('pressCenterMobile')">{{$t('navbar.press-center')}}></button>
           <div id="pressCenterMobile">
             <ul class="list-disc ml-10">
-              <li><a href="/pressRelease">Пресс - релизы</a></li>
-              <li><a href="/news">Новости</a></li>
-              <li><a href="/articles">Статьи</a></li>
-              <li><a href="/media">Медиатека</a></li>
-              <li><a href="/statisticalInformation">Статистическая информация</a></li>
-              <li><a href="/depoInfo">DEPO-инфографика</a></li>
-              <li><a href="/depoDigest">DEPO-дайджест</a></li>
-              <li><a href="/depoCompass">DEPO-compass</a></li>
-              <li><a href="/depoVestnik">DEPO-вестник</a></li>
-              <li><a href="/regulatory">Нормативные документы</a></li>
+              <li><a href="/pressRelease">{{$t('navbar.press-releases')}}</a></li>
+              <li><a href="/news">{{$t('navbar.news')}}</a></li>
+              <li><a href="/articles">{{$t('navbar.articles')}}</a></li>
+              <li><a href="/media">{{$t('navbar.media-library')}}</a></li>
+              <li><a href="/statisticalInformation">{{$t('navbar.statistical-information')}}</a></li>
+              <li><a href="/depoInfo">{{$t('navbar.depo-infographics')}}</a></li>
+              <li><a href="/depoDigest">{{$t('navbar.depo-digest')}}</a></li>
+              <li><a href="/depoCompass">{{$t('navbar.depo-compass')}}</a></li>
+              <li><a href="/depoVestnik">{{$t('navbar.depo-bulletin')}}</a></li>
+              <li><a href="/regulatory">{{$t('navbar.regulatory-documents')}}</a></li>
             </ul>
           </div>
         </div>
 
         <div>
-          <button v-on:click="openMenuMobile('interactiveMobile')">Интерактивные услуги ></button>
+          <button v-on:click="openMenuMobile('interactiveMobile')">{{$t('navbar.interactive')}}></button>
           <div id="interactiveMobile">
             <ul class="list-disc ml-10">
-              <li><a href="/conditions">Договор</a></li>
-              <li><a href="/blanks">Бланки</a></li>
-              <li><a href="/glossary">Словарь терминов</a></li>
-              <li><a href="/isinAndcfi">ISIN и CFI коды</a></li>
-              <li><a href="/questionnaire">Анкета опросник</a></li>
-              <li><a href="/onlineReport">Онлайн-обращение</a></li>
+              <li><a href="/conditions">{{$t('navbar.contract')}}</a></li>
+              <li><a href="/blanks">{{$t('navbar.forms')}}</a></li>
+              <li><a href="/glossary">{{$t('navbar.dictionary-terms')}}</a></li>
+              <li><a href="/isinAndcfi">{{$t('navbar.isin-cfi')}}</a></li>
+              <li><a href="/questionnaire">{{$t('navbar.questionnaire')}}</a></li>
+              <li><a href="/onlineReport">{{$t('navbar.online-appeal')}}</a></li>
             </ul>
           </div>
         </div>
@@ -392,6 +354,27 @@
       <!-- Hamburger menu ends -->
     </div>
 </template>
+
+<script>
+export default {
+  name: "LocaleSwitcher",
+  data() {
+    return { locales: ["ru", "en", "uz"] };
+  },
+  methods: {
+    updateLanguage() {
+      sessionStorage.setItem("locale", this.$i18n.locale);
+    },
+  },
+  mounted() {
+    if (sessionStorage.getItem("locale")) {
+      this.$i18n.locale = sessionStorage.getItem("locale");
+    } else {
+      sessionStorage.setItem("locale", this.$i18n.locale);
+    }
+  },
+};
+</script>
 
 <script setup>
 let blockNames = ['aboutUs', 'ourServices', 'cooperate', 'pressCenter', 'interactive'];
@@ -425,7 +408,6 @@ async function closeOtherMobileMenus(menuNameMobile){
   });
 }
 // mobile menu navigation ends
-
 function openHamburgerMenu() {
   const close = document.getElementById("hamburgerOpen");
   close.classList.add("hidden");
@@ -434,6 +416,7 @@ function openHamburgerMenu() {
   const menu = document.getElementById("hamburgerMenu");
   menu.classList.remove("hidden")
 }
+
 function closeHamburgerMenu() {
   const close = document.getElementById("hamburgerOpen");
   close.classList.remove("hidden");
@@ -442,6 +425,10 @@ function closeHamburgerMenu() {
   const menu = document.getElementById("hamburgerMenu");
   menu.classList.add("hidden")
 }
+console.log(openMenu)
+console.log(openMenuMobile)
+console.log(openHamburgerMenu)
+console.log(closeHamburgerMenu)
 </script>
 
 <style scoped>

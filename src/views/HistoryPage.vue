@@ -1,9 +1,9 @@
 <template>
   <div class="main h-mainPng bg-no-repeat bg-center">
     <div class="container mx-auto text-white text-center">
-      <div class="pt-mainPt text-4xl font-black mb-1">О нас</div>
-      <div>Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
-      <div class="h-14 bg-sky-600 mt-24 flex justify-start items-center px-8">
+      <div class="pt-mainPt 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-2xl font-black mb-1">О нас</div>
+      <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm">Финансовая инвестиционная инфраструктура, поддерживающая рост рынка капитала Республики Узбекистан</div>
+      <div class="h-14 bg-sky-600 2xl:mt-24 xl:mt-24 lg:mt-14 md:mt-14 flex justify-start items-center px-8 2xl:block xl:block lg:block md:block hidden rounded-md">
         <nav class="flex px-5 py-3 text-white" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-10">
             <li class="inline-flex items-center">
@@ -32,17 +32,17 @@
       <div class="container mx-auto">
         <div class="flex justify-center items-end mt-20">
           <div class="flex flex-col">
-            <div class="flex justify-end">
+            <div class="flex  2xl:justify-end xl:justify-end lg:justify-end md:justify-end sm:justify-end justify-center">
               <div class="w-3 h-1 bg-gray-400"></div>
               <div class="w-5 h-1 bg-green-400"></div>
               <div class="w-3 h-1 bg-sky-400"></div>
             </div>
-            <div class="text-2xl font-bold mb-16">История Центрального Депозитария</div>
+            <div class="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-xl font-bold mb-14 text-center">История Центрального Депозитария</div>
           </div>
         </div>
       </div>
 
-    <div class="container mx-auto text-justify px-32">
+    <div class="container mx-auto text-justify 2xl:px-0 xl:px-0 lg:px-0 md:px-2 sm:px-5 px-5">
       <ol class="relative border-l border-gray-200 dark:border-gray-700">
         <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-sky-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
