@@ -5,14 +5,14 @@
           <div class="flex justify-between">
             <a class="flex-none flex justify-center items-center" href="/">
               <img class="w-14 h-14 2xl:block xl:block lg:block md:hidden" src="~@/assets/csd.svg" alt="">
-              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden uppercase"> {{ $t('home-page.logo-text-part-1') }} <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> {{ $t('home-page.logo-text-part-2') }}  </p>
+              <p class="text-xs pl-1 2xl:block xl:block lg:hidden md:hidden sm:hidden uppercase"> {{ $t('navbar.logo-text-part-1') }} <span class="bg-white/50 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">BETA</span> <br> {{ $t('navbar.logo-text-part-2') }}  </p>
             </a>
             <div class="flex justify-between 2xl:text-base xl:text-xs lg:text-xs">
-              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.about-us') }}</button>
-              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.our-services') }}</button>
-              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.cooperate') }}</button>
-              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.press-center') }}</button>
-              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('home-page.interactive') }}</button>
+              <button v-on:click="openMenu('aboutUs')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.about-us') }}</button>
+              <button v-on:click="openMenu('ourServices')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.our-services') }}</button>
+              <button v-on:click="openMenu('cooperate')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.cooperate') }}</button>
+              <button v-on:click="openMenu('pressCenter')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.press-center') }}</button>
+              <button v-on:click="openMenu('interactive')" class="px-10 hover:bg-[#1da1f2]/90 duration-500">{{ $t('navbar.interactive') }}</button>
             </div>
 
             <div class="locale-changer items-center">
@@ -38,28 +38,28 @@
                     <div class="2xl:w-5 2xl:h-1 xl:w-4 xl:h-1 lg:w-1 lg:h-0.5 bg-green-400"></div>
                     <div class="2xl:w-3 2xl:h-1 xl:w-3 xl:h-1 lg:w-1 lg:h-0.5 bg-sky-400"></div>
                   </div>
-                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{ $t('home-page.about-us') }}</div>
+                  <div class="2lx:text-2xl xl:text-2xl lg:text-base font-bold">{{ $t('navbar.about-us') }}</div>
                 </div>
               </div>
-              <div class="ml-5">{{ $t('home-page.about-us-intro') }}</div>
+              <div class="ml-5">{{ $t('navbar.about-us-intro') }}</div>
             </div>
           </div>
         </div>
         <div class="shadow-2xl bg-white">
           <div class="container mx-auto p-5">
             <ul class="flex justify-around">
-              <li class="font-bold"><a href="/ceoMessage">{{ $t('home-page.ceo-message') }}</a></li>
-              <li><a class="font-bold" href="/profile">{{ $t('home-page.profile') }}</a>
+              <li class="font-bold"><a href="/ceoMessage">{{ $t('navbar.ceo-message') }}</a></li>
+              <li><a class="font-bold" href="/profile">{{ $t('navbar.profile') }}</a>
                 <ul>
-                  <li class="pt-5"><a href="/profile">{{ $t('home-page.profile') }}</a></li>
-                  <li><a href="/history">{{ $t('home-page.history') }}</a></li>
-                  <li><a href="/headliners">{{ $t('home-page.headliners') }}</a></li>
-                  <li><a href="/structure">{{ $t('home-page.structure') }}</a></li>
+                  <li class="pt-5"><a href="/profile">{{ $t('navbar.profile') }}</a></li>
+                  <li><a href="/history">{{ $t('navbar.history') }}</a></li>
+                  <li><a href="/headliners">{{ $t('navbar.headliners') }}</a></li>
+                  <li><a href="/structure">{{ $t('navbar.structure') }}</a></li>
                 </ul>
               </li>
-              <li class="font-bold"><a href="/function">{{ $t('home-page.function') }}</a></li>
-              <li class="font-bold"><a href="/membership">{{ $t('home-page.membership') }}</a></li>
-              <li class="font-bold"><a href="/vacancy">{{ $t('home-page.vacancy') }}</a></li>
+              <li class="font-bold"><a href="/function">{{ $t('navbar.function') }}</a></li>
+              <li class="font-bold"><a href="/membership">{{ $t('navbar.membership') }}</a></li>
+              <li class="font-bold"><a href="/vacancy">{{ $t('navbar.vacancy') }}</a></li>
             </ul>
           </div>
         </div>

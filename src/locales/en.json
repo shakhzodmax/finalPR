@@ -1,5 +1,5 @@
 {
-  "home-page": {
+  "navbar": {
     "logo-text-part-1": "Central Depository",
     "logo-text-part-2": "Of Uzbekistan",
     "about-us": "About us",
@@ -24,6 +24,7 @@
     "tarifs": "Tarifs",
     "contacts": "Contact us"
   },
-  "about-screen": {
+  "ceo-message": {
+
   }
 }
