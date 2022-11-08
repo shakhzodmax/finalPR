@@ -1,6 +1,40 @@
 <template>
-<div class="w-full 2xl:pt-navTop xl:pt-navTop lg:pt-navTop">
-  <div class="flex justify-center ">
+<div class="slide-1 hidden">
+  <div class="main">
+    <div class="container mx-auto">
+      <div class="slider-1 mx-auto mt-navbar ">
+        <div class="absolute mt-24 ml-20">
+          <h1 class="text-3xl font-extrabold text-white dark:text-white md:text-5xl lg:text-3xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-blue-600 from-sky-400 text-4xl">MYCABINET</span> - ваш персональный кабинет</h1>
+          <p class="text-center text-lg font-normal text-white lg:text-xs dark:text-gray-400">Центральный депозитарий ценных бумаг представляет вам систему персонального кабинета.</p>
+          <button class="ml-52 mt-5 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+          <span class="relative px-20 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Войти в систему
+          </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slide-2">
+  <div class="submain">
+    <div class="container mx-auto">
+      <div class="slider-1 mx-auto mt-navbar ">
+        <div class="absolute mt-24 ml-20">
+          <h1 class="text-3xl font-extrabold text-white dark:text-white md:text-5xl lg:text-3xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-blue-900 from-sky-500 text-4xl">E-VOTE</span> - электронное голосование</h1>
+          <p class="text-center text-lg font-normal text-white lg:text-xs dark:text-gray-400">Центральный депозитарий ценных бумаг представляет вам систему электронного голосования.</p>
+          <button class="ml-40 mt-5 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-sky-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+          <span class="relative px-20 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Войти в систему
+          </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-full">
+  <div class="flex justify-center hidden">
     <div class="item-first flex bg-slate-200 w-1/2 py-4 hover:bg-slate-300 duration-500">
       <div class="container mx-auto flex justify-center">
         <div class="first-part-one mr-10 ">
@@ -62,7 +96,7 @@
     </div>
 
     <div class="rounded-menus 2xl:block xl:block lg:block md:hidden hidden">
-      <div class="mt-3 bg-white flex justify-center 2xl:space-x-8 2xl:py-5 2xl:text-base xl:space-x-4 xl:py-5 lg:py-2 xl:text-sm lg:text-xs lg:space-x-3 lg:py-4 md: justi ">
+      <div class="mt-3 bg-white flex justify-center 2xl:space-x-8 2xl:py-5 2xl:text-base xl:space-x-4 xl:py-5 lg:py-2 xl:text-sm lg:text-xs lg:space-x-3 lg:py-4">
         <div class="hover:text-sky-500 duration-300">
           <a href="#">
             <img class="inline-block mx-auto rounded-full p-1 ring-2 ring-gray-300 dark:ring-gray-500 hover:ring-sky-500" src="~@/assets/depServivces.png" alt="">
@@ -421,8 +455,20 @@
 </div>
 </template>
 
-<style>
+<style scoped>
 *{
   font-family: "Gotham Pro", Gotham, Arial;
+}
+.main{
+  height: 300px;
+  background: url("@/assets/mycabbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.submain{
+  height: 300px;
+  background: url("@/assets/evotebg.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 </style>
