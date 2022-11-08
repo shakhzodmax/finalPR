@@ -104,5 +104,25 @@
     "last-news":"Last news",
     "overviews":"Overview of issues of securities registered with the central securities depository",
     "watch":"More detailed"       
+  },
+  "ceo-message":{
+    "main-screen":"Main screen",
+    "body-text":"“In order to maintain public trust through innovations in the field of sustainable management, we promise to fulfill our social responsibilities as a public institution.”",
+    "director-name":"Sherali Yangibayevich Abduzhabborov",
+    "general-manager":"General director",
+    "central-depository":"Central Depository",
+    "footer-text-1":"- It offers a stable and efficient financial investment infrastructure for various capital market participants.",
+    "footer-text-2":"In addition, as a key institution of the capital market, the Central Securities Depository contributes to the development of the financial industry, as well as supports sustainable management to create common values with society, contributing to the fact that people's real lives are useful and fruitful.",
+    "footer-text-3":"\"Our customers are the meaning of our existence\"",
+    "footer-text-4":"We are committed to exceed the expectations of our customers with attention and perfection, and we will do everything possible to ensure that the Central Securities Depository earns the love and trust of our customers and the public.",
+    "thanks":"Thanks."    
+  },
+  "profile":{
+    "profile":"Profile",
+    "profile-header":"The State Enterprise \"Central Securities Depository\" is an organization that provides a unified system of storage, accounting of rights and movement of securities in the depository system of the Republic of Uzbekistan. The Central Securities Depository carries out its activities in accordance with the Law of the Republic of Uzbekistan “On the Securities Market\" and other legislative norms of the Republic. Articles 39 and 40 of the aforementioned Law establish a list of exclusive functions, including the rights and obligations of the Central Securities Depository.",
+    "profile-body-start":"In accordance with the Law of the Republic of Uzbekistan \"On the Securities Market\", the Central Securities Depository is entrusted with:",
+    "profile-body-text-1":"Registration of securities;",
+    "profile-body-text-2":"Storage of documentary securities;",
+    "profile-body-text-3":"storage of documents confirming the issue of securities;"
   }
 }

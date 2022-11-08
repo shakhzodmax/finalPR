@@ -108,5 +108,25 @@
     "last-news":"So'ngi yangiliklar",
     "overviews":"Markaziy depozitariyada hisobga olingan qimmatli qog'ozlar chiqarilishini ko'rib chiqish",
     "watch":"Batafsil"  
- }
+ },
+ "ceo-message":{
+  "main-screen":"Asosiy ekran",
+  "body-text":"\"Barqaror boshqaruv innovatsiyalari orqali jamoatchilik ishonchini saqlab qolish uchun biz davlat idorasi sifatida ijtimoiy vazifalarimizni bajarishga va'da beramiz.”",
+  "director-name":"Abdujabborov Sherali Yangibayevich",
+  "general-manager":"Bosh direktor",
+  "central-depository":"Markaziy depozitariy",
+  "footer-text-1":"- kapital bozorining turli ishtirokchilari uchun barqaror va samarali moliyaviy investitsiya infratuzilmasini taklif etadi.",
+  "footer-text-2":"Bundan tashqari, kapital bozorining asosiy instituti sifatida Markaziy depozitariy moliya sanoatini rivojlantiradi, shuningdek, jamiyat bilan umumiy qadriyatlarni yaratish uchun barqaror boshqaruvni qo'llab-quvvatlaydi, odamlarning haqiqiy hayoti foydali va samarali bo'lishini ta'minlaydi.",
+  "footer-text-3":"\"Bizning mijozlarimiz-bu bizning mavjudligimizning ma'nosi\"",
+  "footer-text-4":"Biz mijozlarimizning umidlarini diqqat va mukammallik bilan engib o'tishga sodiqmiz va Markaziy depozitariy mijozlarimiz va jamoatchilikning sevgisi va ishonchini qozonishi uchun qo'limizdan kelganini qilamiz.",
+  "thanks":"Rahmat."
+},
+"profile":{
+  "profile":"Profil",
+  "profile-header":"\"Qimmatli qog'ozlar Markaziy depozitariysi\" davlat korxonasi-O'zbekiston Respublikasi depozitariy tizimida qimmatli qog'ozlarni saqlash, ularning huquqlari va harakatini hisobga olishning yagona tizimini ta'minlovchi tashkilot. Markaziy depozitariy o'z faoliyatini O'zbekiston Respublikasining \"qimmatli qog'ozlar bozori to'g'risida\" gi Qonuni va respublikaning boshqa Qonunchilik normalariga muvofiq amalga oshiradi. Yuqoridagi Qonunning 39 va 40-moddalarida alohida funktsiyalar ro'yxati, shu jumladan qimmatli qog'ozlar Markaziy depozitariysining huquq va majburiyatlari ko'rsatilgan.",
+  "profile-body-start":"O'zbekiston Respublikasining \"qimmatli qog'ozlar bozori to'g'risida\" gi Qonuniga muvofiq Markaziy qimmatli qog'ozlar depozitariysiga quyidagilar yuklatilgan:",
+  "profile-body-text-1":"Qimmatli qog'ozlarni ro'yxatdan o'tkazish;",
+  "profile-body-text-2":"Qimmatli qog'ozlarni hujjatlarini saqlash;",
+  "profile-body-text-3":"Qimmatli qog'ozlar chiqarilishini tasdiqlovchi hujjatlarni saqlash;"
+}
 }
