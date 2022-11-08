@@ -4,9 +4,9 @@
       <div class="pt-mainPt 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-2xl font-black mb-1">{{$t('navbar.about-us')}}</div>
       <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm">{{$t('navbar.about-us-intro')}}</div>
       <div class="h-14 bg-sky-600  2xl:mt-24 xl:mt-24 lg:mt-14 md:mt-14 flex justify-start items-center px-8 2xl:block xl:block lg:block md:block hidden rounded-md">
-        <nav class="flex px-5 py-3 text-white 2xl:text-base xl:text-base lg:text-base md:text-sm" aria-label="Breadcrumb">
+        <nav class="flex px-5 py-3 text-white 2xl:text-base xl:text-base lg:text-base md:text-sm " aria-label="broadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-10">
-            <li class="inline-flex items-center">
+            <li class="inline-flex items-center ">
               <a href="#" class="inline-flex items-center text-md font-medium hover:text-slate-300">
                 <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
                 {{$t('ceo-message.main-screen')}}

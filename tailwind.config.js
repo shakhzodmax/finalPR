@@ -6,6 +6,9 @@ module.exports = {
       height: {
         'mainPng': '337px',
       },
+      margin:{
+        'navbar': '56px',
+      },
       minWidth:{
         'a': '480px',
         'b': '320px'
