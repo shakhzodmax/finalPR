@@ -2,7 +2,7 @@
   <div class="main h-mainPng bg-no-repeat bg-center">
     <div class="container mx-auto text-white text-center">
       <div class="pt-mainPt 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-2xl font-black mb-1">Наши услуги</div>
-      <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
+      <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm px-2">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
       <div class="h-14 bg-sky-600 2xl:mt-24 xl:mt-24 lg:mt-14 md:mt-14 flex justify-start items-center px-8 2xl:block xl:block lg:block md:block hidden rounded-md">
         <nav class="flex px-5 py-3 text-white" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-10">
@@ -50,7 +50,7 @@
   </div>
   <div class="container mx-auto">
     <p class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm 2xl:ml-40 2xl:mr-36 2xl:text-justify xl:ml-20 xl:mr-20 xl:text-justify lg:ml-20 lg:mr-20 lg:text-justify md:ml-16 md:mr-20 md:text-justify sm:ml-14 sm:mr-10 sm:text-justify ml-6 mt-4 text-justify mr-4">Центральный Депозитарий в соответствии с «Положением о порядке взаимодействия судебных исполнителей с судами, правоохранительными, регистрирующими органами, финансово-кредитными организациями при принудительном исполнении судебных актов и актов иных органов» (утверждено Приказом министра юстиции от 05.02.2007 г. N 21-мх, зарегистрированным МЮ 05.02.2007 г. N 1656) оказывает информационные услуги уполномоченным государственным органам по выдаче информации о наличии ценных бумаг на счетах депо должников.</p>  
-    <p class="2xl:text-xl xl:text-lgxl lg:text-xl md:text-xl sm:text-sm text-sm  2xl:ml-40 2xl:mr-36 2xl:text-justify  2xl:mt-6 xl:ml-20 xl:mr-20 xl:text-justify xl:mt-6 lg:ml-20 lg:mr-20 lg:text-justify lg:mt-6 md:ml-16 md:mr-20 md:text-justify md:mt-6 sm:ml-14 sm:mr-10 sm:text-justify  sm:mt-6 ml-6 mt-4 text-justify mr-4 mb-8">Кроме этого, на сайте Центрального депозитария еженедельно размещается статистическая информация по учету и хранению ценных бумаг, выпущенных эмитентами.</p>
+    <p class="2xl:text-xl xl:text-lgxl lg:text-xl md:text-xl sm:text-sm text-sm  2xl:ml-40 2xl:mr-36 2xl:text-justify  2xl:mt-6 xl:ml-20 xl:mr-20 xl:text-justify xl:mt-6 lg:ml-20 lg:mr-20 lg:text-justify lg:mt-6 md:ml-16 md:mr-20 md:text-justify md:mt-6 sm:ml-14 sm:mr-10 sm:text-justify  sm:mt-6 ml-6 mt-4 text-justify mr-4 mb-10">Кроме этого, на сайте Центрального депозитария еженедельно размещается статистическая информация по учету и хранению ценных бумаг, выпущенных эмитентами.</p>
     </div>
 </template>
 

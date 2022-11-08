@@ -2,7 +2,7 @@
   <div class="main h-mainPng bg-no-repeat bg-center">
     <div class="container mx-auto text-white text-center">
       <div class="pt-mainPt 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-2xl text-2xl font-black mb-1">Наши услуги</div>
-      <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
+      <div class="2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm text-sm px-2">Мы предоставляем надежные финансовые услуги, постоянно проводя преобразования и инновации</div>
       <div class="h-14 bg-sky-600 2xl:mt-24 xl:mt-24 lg:mt-14 md:mt-14 flex justify-start items-center px-8 2xl:block xl:block lg:block md:block hidden rounded-md">
         <nav class="flex px-5 py-3 text-white" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-10">
@@ -52,7 +52,7 @@
       <p class="text-center text-sm  font-bold 2xl:mt-6 xl:mt-4 lg:mt-4 md:mt-4 sm:mt-2 2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-sm  2xl:text-center xl:text-justify lg:text-justify md:text-justify sm:text-justify">В соответствии с Законом Республики Узбекистан «О рынке ценных бумаг» Центральному депозитарию ценных бумаг возложены:
 </p>
     </div>
-    <div class="container mx-auto mb-16 px-5 ">
+    <div class="container mx-auto mb-10 px-5 ">
       <p class="text-sm 2xl:text-xl 2xl:mt-8 2xl:ml-20 md:text-xl xl:ml-4 xl:mt-6 md:mt-2 md:ml-6 lg:ml-6 lg:mt-6 xl:text-xl lg:text-md:text-xl sm:text-sm sm:mt-6 sm:ml-10 ml-4 mt-4 2xl:text-justify xl:text-justify lg:text-justify md:text-justify sm:text-justify">- постановка на учет ценных бумаг;</p>
       <p class="text-sm 2xl:text-xl 2xl:mt-2 2xl:ml-20 md:text-xl xl:ml-4 xl:mt-2 md:mt-2 md:ml-6 lg:ml-6 lg:mt-2 xl:text-xl lg:text-xlmd:text-xl sm:text-sm sm:mt-2 sm:ml-10 ml-4 mt-2 2xl:text-justify xl:text-justify lg:text-justify md:text-justify sm:text-justify">- хранение документарных ценных бумаг;</p>
       <p class="text-sm 2xl:text-xl 2xl:mt-2 2xl:ml-20 md:text-xl xl:ml-4 xl:mt-2 md:mt-2 md:ml-6 lg:ml-6 lg:mt-2 xl:text-xl lg:text-xlmd:text-xl sm:text-sm sm:mt-2 sm:ml-10 ml-4 mt-2 2xl:text-justify xl:text-justify lg:text-justify md:text-justify sm:text-justify">- хранение документов, подтверждающих выпуск ценных бумаг;</p>
